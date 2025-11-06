@@ -20,13 +20,17 @@ public class App {
         System.out.println("Informe a altura em metros:");
         usuario.altura = leia.nextDouble();
 
+        // siada de dados
+        usuario.exibirDados();
+         // fecha objeto leia 
+         leia.close();
+
         
         }
 
 
 
 
-        // fecha objeto leia
-        leia.close();
+    
     }
-}
+
