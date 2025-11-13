@@ -21,7 +21,7 @@ public class App {
             opcao = JOptionPane.showInputDialog(null,
             "Selecione uma Opção:",
             "combustivel",
-            0,
+            JOptionPane.INFORMATION_MESSAGE,
             null,
             opcoes,
             opcoes[0]
