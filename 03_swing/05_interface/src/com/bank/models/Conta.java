@@ -71,7 +71,7 @@ public class Conta implements Iconta {
         "\nCPF: " + this.cpf +
         "\nNúmero da Agênci: " + this.agencia + 
         "\nNúmero da Conta: " + this.nConta+
-        "\nSaldo: r$ " + String.format("%.2f", this.saldo);
+        "\nSaldo: R$ " + String.format("%.2f", this.saldo);
         
         
     }
