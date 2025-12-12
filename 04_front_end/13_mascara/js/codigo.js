@@ -1,4 +1,7 @@
 const form = document.querySelector('form');
+const cpfMask = document.querySelector('#cpf');
+const telefoneMask = document.querySelector('#telefone');
+const cepMask = document.querySelector('#cep');
 
 const exibirInfo = () => {
     // declaracao variaveis
@@ -30,6 +33,31 @@ const exibirInfo = () => {
     form.reset();
     
 }
+
+cpfMask.addEventListener('input', function() {
+    this.value = this.value
+    .replace(/\D/g,'')
+    .replace(/(\d{3})(\d)/, '$1.$2')
+    .replace(/(\d{3})(\d)/, '$1.$2')
+    .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+});
+
+telefoneMask.addEventListener('input', function() {
+    this.value = this.value
+    .replace(/\D/g,'')
+    .replace(/(\d{2})(\d)/, '($1) $2')
+    .replace(/(\d{4,5})(\d)/, '$1-$2')
+    .replace(/(-\d{4})\d+?$/, '$1');
+});
+
+
+cepMask.addEventListener('input', function() {
+    this.value = this.value
+        .replace(/\D/g, '')
+        .replace(/(\d{2})(\d)/, '$1.$2')      
+        .replace(/(\d{3})(\d)/, '$1-$2')
+        .replace(/(-\d{3})\d+?$/, '$1');
+});
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
