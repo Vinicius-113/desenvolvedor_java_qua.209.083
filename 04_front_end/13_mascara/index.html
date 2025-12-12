@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máscara de Entrada</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/mascaras-de-teatro.png" alt="Logo" width="30" class="d-inline-block align-text-top">
+                Máscara de Entrada
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h1 class="mb-3">Formulário com Máscara de Entrada</h1>
+        <hr>
+
+        <form>
+            <div class="row">
+
+                <!-- Nome -->
+                <div class="col-12 col-md-6 mb-3">
+                    <label class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+
+                <!-- Email -->
+                <div class="col-12 col-md-6 mb-3">
+                    <label class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+
+                <!-- Data de nascimento -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Data de Nascimento:</label>
+                    <input type="date" class="form-control" id="nascimento">
+                </div>
+
+                <!-- CPF -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">CPF:</label>
+                    <input type="text" class="form-control" id="cpf">
+                </div>
+
+                <!-- Telefone -->
+                <div class="col-12 col-md-4 mb-3">
+                    <label class="form-label">Telefone:</label>
+                    <input type="tel" class="form-control" id="telefone">
+                </div>
+
+                <!-- CEP -->
+                <div class="col-12 col-md-3 mb-3">
+                    <label class="form-label">CEP:</label>
+                    <input type="text" class="form-control" id="cep">
+                </div>
+
+                <!-- Endereço -->
+                <div class="col-12 col-md-9 mb-3">
+                    <label class="form-label">Endereço:</label>
+                    <input type="text" class="form-control" id="endereco">
+                </div>
+
+                <!-- botão -->
+
+                <div class="d-flex justify-content-center mt-5 mb-5">
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </div>
+            </div>
+        </form>
+        <hr>
+
+        <!-- resultado -->
+        <!-- resultado -->
+        <div class="row">
+            <div class="d-flex justify-content-center mt-5 mb-5">
+            <div class="card">
+                <h5 class="card-header">Resultado</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Dados do usuário:</h5>
+
+                    <p id="nomeResult"></p>
+                    <p id="emailResult"></p>
+                    <p id="nascimentoResult"></p>
+                    <p id="cpfResult"></p>
+                    <p id="telefoneResult"></p>
+                    <p id="cepResult"></p>
+                    <p id="enderecoResult"></p>
+
+                   
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- meu js -->
+
+    <script src="js/codigo.js"></script>
+
+</body>
+
+</html>
